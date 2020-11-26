@@ -7,10 +7,11 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-contentful`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        spaceId: `pe9oy9tgvr39`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `bS5a_iXu2mB0BuVm_--kckEUVS9xjRacYEi9tD5MhrQ`,
       },
     },
     `gatsby-transformer-sharp`,
